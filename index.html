@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: blanchedalmond;
+        }
+        
+        .navbar-nav li a {
+            margin: 30px;
+            text-decoration: none;
+            font-size: 21px;
+            border: gray;
+            color: white;
+        }
+        
+        .navbar-nav li :hover {
+            color: orange;
+        }
+        
+        .heading {
+            left: 0px;
+            padding-top: 100px;
+            color: black;
+            background-image: url(https://img.freepik.com/free-photo/portrait-young-university-student-woman-with-graduation-cap-violet-background_33799-8039.jpg?size=626&ext=jpg);
+            background-repeat: no-repeat;
+            background-size: 1300px;
+        }
+        
+        .s1 {
+            font-size: 55px;
+        }
+        
+        .navbar1 {
+            position: relative;
+        }
+        
+        .navbar {
+            width: 100%;
+        }
+        
+        .form-control {
+            width: 220px;
+        }
+        
+        .d-flex {
+            margin-left: 90px;
+        }
+        
+        .s3 {
+            background-color: darkorange;
+            border: 1px solid black;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-decoration: none;
+            color: white;
+            border-radius: 30px;
+        }
+        
+        .s3:hover {
+            background-color: white;
+            color: blue;
+        }
+        
+        .main {
+            display: flex;
+            background-color: white;
+        }
+        
+        .col1 {
+            margin-left: 130px;
+            margin-top: 20px;
+        }
+        
+        .col1 a {
+            margin-top: 30px;
+        }
+        
+        .s2 {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .s5 {
+            font-size: 20px;
+            letter-spacing: 4px;
+        }
+        
+        .col2 {
+            padding-left: 50px;
+        }
+        
+        .a1 {
+            display: flex;
+        }
+        
+        .a2 {
+            padding-right: 10px;
+            padding-top: 5px;
+        }
+        
+        span {
+            color: yellow;
+        }
+        
+        .col3 {
+            border: 1px solid black;
+            width: 310px;
+            height: 340px;
+            text-align: center;
+            background-color: orange;
+            color: white;
+            padding-top: 30px;
+        }
+        
+        .main1 {
+            display: flex;
+        }
+        
+        .main2 {
+            background-color: bisque;
+        }
+        
+        .col4 {
+            display: flex;
+            height: 280px;
+            padding: 30px;
+            margin: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .f1 {
+            margin: 50px;
+            margin-top: 20px;
+            height: 220px;
+            background-color: ;
+            border-radius: 10px;
+            text-align: left;
+        }
+        
+        .p1 {
+            display: flex;
+        }
+        
+        .p2 {
+            margin-left: 35px;
+            margin-top: 20px;
+        }
+        
+        .p3 {
+            margin-right: 10px;
+        }
+        
+        .main3 {
+            display: flex;
+            margin: 20px;
+            padding-top: 30px;
+        }
+        
+        .col6 {
+            margin-left: 40px;
+            word-spacing: 7px;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .r1 {
+            background-image: url(https://www.dporganizer.com/wp-content/uploads/2018/02/15145454/education-background.jpg);
+        }
+        
+        .r2 {
+            display: flex;
+            color: white;
+        }
+        
+        .b1 {
+            text-align: center;
+            padding-left: 110px;
+        }
+        
+        .l1 {
+            text-align: center;
+        }
+        
+        .a2 {
+            display: flex;
+        }
+        
+        .f2 {
+            margin-left: 22px;
+            text-align: center;
+        }
+        
+        .t1 {
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .t2 {
+            display: flex;
+            margin: 10px;
+        }
+        
+        .main5 {
+            margin-left: 640px;
+            margin-top: 70px;
+            padding-top: 60px;
+        }
+        
+        .t3 {
+            width: 270px;
+            height: 40px;
+            border: none;
+            border-radius: 20px;
+        }
+        
+        .a3 {
+            word-spacing: 10px;
+            font-size: 18px;
+        }
+        
+        .t5 {
+            background-image: url(https://static.wixstatic.com/media/c0f959_d74d474386304670b5c33c7c90bb8e9f~mv2_d_2000_1333_s_2.png/v1/fill/w_2000,h_1333,al_c/c0f959_d74d474386304670b5c33c7c90bb8e9f~mv2_d_2000_1333_s_2.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        .t6 {
+            padding-left: 10px;
+        }
+        
+        .tt {
+            display: flex;
+            padding-left: 20px;
+        }
+        
+        .footer {
+            display: flex;
+        }
+        
+        .p0 {
+            display: flex;
+            padding-top: 30px;
+        }
+        
+        .p9 {
+            padding-top: 110px;
+        }
+        
+        .p8 {
+            display: flex;
+        }
+        
+        .news {
+            background-color: black;
+            color: white;
+            display: flex;
+        }
+        
+        .btn2 {
+            height: 45px;
+            width: 100px;
+            background: white;
+            margin-left: -10px;
+            border: 2px solid white;
+            font-weight: 600;
+        }
+        
+        .news input {
+            height: 45px;
+            width: 55%;
+            border: 2px solid white;
+            outline: none;
+            background: black;
+            color: white;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        
+        .news::placeholder {
+            color: white;
+        }
+        
+        .news p {
+            margin: 0;
+        }
+        
+        .fab {
+            font-size: 2.5rem;
+            cursor: pointer;
+            padding-right: 5px;
+        }
+        
+        span a {
+            text-decoration: none;
+            color: gray;
+        }
+        
+        span :hover {
+            color: white;
+        }
+        
+        .m2 {
+            width: 135px;
+            height: 45px;
+            background-color: orange;
+        }
+        
+        .m2:hover {
+            background-color: blue;
+        }
+        
+        .row {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="col2">
+            <h1 class="s4"> <b>FOX.</b> </h1>
+            <P class="s5"> <b>University</b></P>
+        </div>
+        <div class="col1">
+            <div class="a1">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentcolor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+                  </svg>
+                </div>
+
+                <div>
+                    <h5>Email <br>youremail@gmail.com</h5>
+                </div>
+            </div>
+
+        </div>
+        <div class="col1">
+            <div class="a1">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                </div>
+                <div>
+                    <h5> Call <br>call us:+7356456786</h5>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col1 mt-4 pt-3 ">
+            <a href=" " class="s3 ">Apply now </a>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="navbar1 mt-2">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+            <div class="container-fluid ">
+                <a class="navbar-brand " href="javascript:void(0) "><img src="https://yt3.ggpht.com/a/AATXAJxAcAkOSTIyB9ftk9hi_0DSGwEdzZNdcr_lig=s900-c-k-c0xffffffff-no-rj-mo " alt=" " width="50px " height="50px "></a>
+                <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#mynavbar ">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+                <div class="collapse navbar-collapse " id="mynavbar ">
+                    <ul class="navbar-nav me-auto ">
+                        <li>
+                            <a href="Home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="Courses.html">Courses</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="staff.html">staff</a>
+                        </li>
+                        <li>
+                            <a href="contact2.html">Contact</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex ">
+                        <div class="a2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>
+                        </div>
+
+                        <input class="form-control me-2 " type="text " placeholder="Search ">
+
+                        <button class="btn btn-primary " type="button ">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class=" heading ps-5 ">
+        <h1 class="s1 mt-5 "><span>Education</span> Needs <br>Complete Solution..</h1> <br>
+        <p class="s2 ">A small river named Duden flows by there place and suplies it with <br> the necessary regelialia. It is a paradisematic <br> country. A small river named Duden flows by <br> their place and supplies it with the necessary <br> regelialia. It is
+            a paradisematic country, in which <br> roasted parts of sentences fly into <br> your mouth.</p> <br>
+        <a href=" " class="s3 ">Contact us</a>
+
+        <br><br><br><br><br><br><br><br>
+
+
+    </div>
+
+    <div class="main1">
+        <div class="col3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+              </svg>
+            <h4>Certified Teachers</h4>
+            <p>Even the all-powerful Pointing <br> has no control about the <br> blind texts it is an almost <br> unorthographic.</p>
+
+        </div>
+        <div class="col3" style="background-color: darkblue;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                <path d= "M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+              </svg>
+
+            <h4>Special Education</h4>
+            <p>Even the all-powerful Pointing <br> has no control about the <br>blind texts it is an almost<br> unorthographic.</p>
+
+        </div>
+        <div class="col3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-journal-richtext" viewBox="0 0 16 16">
+                <path d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+              </svg>
+
+
+            <h4>Book & Library</h4>
+            <p>Even the all-powerful Pointing <br>has no control about the <br>blind texts it is an almost <br>unorthographic.</p>
+
+        </div>
+        <div class="col3" style="background-color:darkblue ">
+            <svg xmlns=" http://www.w3.org/2000/svg " width="50 " height="50 " fill="currentColor " class="bi bi-file-text-fill " viewBox="0 0 16 16 ">
+                <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0
+            1 0 1H5a.5.5 0 0 1 0-1z "/>
+              </svg>
+
+
+            <h4>Sport Clubs</h4>
+            <p>Even the all-powerful Pointing <br>has no control about the<br> blind texts it is an almost <br>unorthographic.</p>
+
+        </div>
+
+    </div>
+    <div class="p1">
+        <div class="main2">
+            <h1 class="p2">What We Offer...</h1>
+            <p class="p2" style="font-size: 18px;">On her way she met a copy. The copy warned the Little Blind Text, that where it <br> bcame from it would have been rewritten a thousand times and everything <br> that was left from its origin would be the word.</p>
+            <div class="col4">
+                <div class="f1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="orange" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
+                  </svg>
+                    <h3>Safety First</h3>
+                    <h5>Far far away, behind the <br> word mountains, far <br> from the countries <br> Vokalia.</h5>
+
+
+                </div>
+                <div class="f1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="orange" class="bi bi-book" viewBox="0 0 16 16">
+                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                  </svg>
+                    <h3>Regular Classes</h3>
+                    <h5>Far far away, behind the <br> word mountains, far <br> from the countries <br> Vokalia.</h5>
+
+
+                </div>
+
+
+
+            </div>
+            <div class=" col4 me-5">
+                <div class="f1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="orange" class="bi bi-journal-richtext" viewBox="0 0 16 16">
+                    <path d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                    <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                    <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                  </svg>
+                    <h3>Certified Teachers</h3>
+                    <h5>Far far away, behind the <br> word mountains, far <br> from the countries <br> Vokalia.</h5>
+
+
+                </div>
+                <div class="f1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="orange" class="bi bi-bank" viewBox="0 0 16 16">
+                    <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"/>
+                  </svg>
+                    <h3>Sufficient <br> Classrooms</h3>
+                    <h5>Far far away, behind the <br> word mountains, far <br> from the countries <br> Vokalia.</h5>
+
+
+                </div>
+
+            </div>
+            <div class="col4 ">
+                <div class="f1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="orange" class="bi bi-calendar3" viewBox="0 0 16 16">
+                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                  </svg>
+                    <h3>Creative Lessons</h3>
+                    <h5>Far far away, behind the <br> word mountains, far <br> from the countries <br> Vokalia.</h5>
+
+
+                </div>
+                <div class="f1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="orange" class="bi bi-h-circle" viewBox="0 0 16 16">
+                    <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-5-3.998V12H9.67V8.455H6.33V12H5V4.002h1.33v3.322h3.34V4.002H11Z"/>
+                  </svg>
+                    <h3>Sports Facilities</h3>
+                    <h5>Far far away, behind the <br> word mountains, far <br> from the countries <br> Vokalia.</h5>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="p3">
+            <img src="https://thumbs.dreamstime.com/b/smiling-students-looking-camera-outside-university-49045755.jpg" alt="" height="1100px" width="490px">
+
+        </div>
+    </div>
+    <div class="r1">
+        <div class="main3">
+            <div>
+
+                <video width="550px" height="550px" controls>
+                <source src="video/universityvideo.mp4" type="video/mp4" >
+                
+            </video>
+
+
+            </div>
+            <div class=" col6 ">
+                <h1><b> Fox University. </b></h1> <br><br>
+                <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    It is a paradisematic country, in which roasted parts of sentences fly into your mouth.<br> <br> A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which
+                    roasted parts of sentences fly into your mouth.</p> <br>
+
+
+            </div>
+
+
+        </div>
+        <div class="r2">
+            <div class="b1">
+                <h1>18</h1>
+                <h2>Certified Teachers</h2>
+
+            </div>
+            <div class="b1">
+                <h1>401</h1>
+                <h2>Students</h2>
+
+            </div>
+            <div class="b1">
+                <h1>30</h1>
+                <h2> Courses</h2>
+
+            </div>
+            <div class="b1">
+                <h1>50</h1>
+                <h2>Awoards won</h2>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="main4"> <br><br>
+        <h1 class="l1" style="font-size: 45px;"> <b> Our Courses</b></h1><br>
+        <p class="l1" style="font-size: 20px;">Separated they live in. A small river named Duden flows by their place and supplies it with the <br> necessary regelialia. It is a paradisematic country.
+        </p> <br><br>
+        <div class="a2">
+            <div class="f2">
+                <img src="https://media.istockphoto.com/photos/businessman-presenting-project-to-potential-investors-at-meeting-in-picture-id912234906?k=6&m=912234906&s=170667a&w=0&h=lT_qXijpxjcc8-LwG7w9_DRiLQJH0x2pp-IkjpUXdzI=" alt="" width="280px" height="300">
+                <h2>Electric Engineering</h2>
+                <p>Separated they live in. A small <br> river named Duden flows by their <br> place and supplies it with the <br> necessary regelialia. It is a <br> paradisematic country</p>
+                <a href="" class="s3">Apply Now</a>
+
+            </div>
+            <div class="f2">
+                <img src="https://thumbs.dreamstime.com/z/handsome-young-businessman-eyewear-working-computer-remotely-side-view-sitting-wooden-table-kitchen-pleasant-happy-man-169061030.jpg" alt="" width="280px" height="300">
+                <h2>Electric Engineering</h2>
+                <p>Separated they live in. A small <br> river named Duden flows by their <br> place and supplies it with the <br> necessary regelialia. It is a <br> paradisematic country</p>
+                <a href="" class="s3">Apply Now</a>
+
+            </div>
+            <div class="f2">
+                <img src="https://www.ava.uk/hs-fs/hubfs/Library/Cyber/Technology/tech%20thumb.jpg?width=584&name=tech%20thumb.jpg" alt="" width="280px" height="300">
+                <h2>Electric Engineering</h2>
+                <p>Separated they live in. A small <br> river named Duden flows by their <br> place and supplies it with the <br> necessary regelialia. It is a <br> paradisematic country</p>
+                <a href="" class="s3">Apply Now</a>
+
+            </div>
+            <div class="f2">
+                <img src="https://th.bing.com/th/id/R.c6ab9a955a67721d8f12fac5471ef80a?rik=2PTLJ3uNeFQRKA&riu=http%3a%2f%2ffamo.fizyka.umk.pl%2fwp-content%2fuploads%2fimage-3.png&ehk=40MOBEcDC5Uc2DiUUes5WTmscQeKkRL8aicMtyysEUM%3d&risl=&pid=ImgRaw&r=0" alt="" width="280px"
+                    height="300">
+                <h2>Electric Engineering</h2>
+                <p>Separated they live in. A small <br> river named Duden flows by their <br> place and supplies it with the <br> necessary regelialia. It is a <br> paradisematic country</p>
+                <a href="" class="s3">Apply Now</a>
+
+            </div>
+        </div>
+
+    </div>
+    <br><br><br><br>
+
+
+
+
+
+
+    <div class="main4"> <br><br>
+        <h1 class="l1" style="font-size: 45px;"> <b> Certified Teachers</b></h1><br>
+        <p class="l1" style="font-size: 20px;">Separated they live in. A small river named Duden flows by their place and supplies it with the <br> necessary regelialia. It is a paradisematic country.
+        </p> <br><br>
+        <div class="a2">
+            <div class="f2">
+                <img src="https://thumbs.dreamstime.com/z/business-woman-finger-point-out-isolated-white-42156037.jpg" alt="" width="280px" height="300">
+                <h3 class="t1">Bianca Wilson</h3>
+                <p style="color: orange;">Math Teacher</p>
+                <p> I am an ambitious workaholic, <br> but apart from that, pretty simple <br> person.</p>
+
+            </div>
+            <div class="f2">
+                <img src="https://images.freeimages.com/images/premium/previews/1738/17389695-smiling-chinese-girl-on-white.jpg" alt="" width="280px" height="300">
+                <h3 class="t1">Mitch Parker</h3>
+                <p style="color: orange;">English Teacher</p>
+                <p> I am an ambitious workaholic, <br> but apart from that, pretty simple <br> person.</p>
+
+            </div>
+            <div class="f2">
+                <img src="https://thumbs.dreamstime.com/z/attractive-female-doctor-holding-folder-beautiful-blue-white-background-33321527.jpg" alt="" width="280px" height="300">
+                <h3 class="t1">Stella Smith</h3>
+                <p style="color: orange;"> Science Teacher</p>
+                <p> I am an ambitious workaholic, <br> but apart from that, pretty simple <br> person.</p>
+
+            </div>
+            <div class="f2">
+                <img src="https://thumbs.dreamstime.com/z/business-woman-holds-tablet-her-hand-business-woman-holds-tablet-hand-105528100.jpg" alt="" width="280px" height="300">
+                <h3 class="t1">Monshe Henderson</h3>
+                <p style="color: orange;">Arts Teacher</p>
+                <p> I am an ambitious workaholic, <br> but apart from that, pretty simple <br> person.</p>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="t5">
+        <div class="main5">
+            <h1 style="color: gold;">Request A Quote</h1> <br>
+            <h4 class="a3" style="color: rgb(11, 7, 24);">Far far away, behind the word mountains, far from the <br> countries Vokalia and Consonantia, there live the blind <br> texts.</h4>
+            <br><br>
+
+            <div class="t2">
+                <div>
+                    <input type="" class="t3" placeholder="First Name">
+                    <label for="submit"></label>
+
+
+                </div>
+                <div>
+                    <input type="" class="t3" placeholder="Last Name">
+
+                </div>
+
+            </div> <br><br>
+            <div class="t2">
+                <div>
+                    <input type="" class="t3" placeholder="Select Your Course">
+                    <label for=""></label>
+
+
+                </div>
+                <div>
+                    <input type="" class="t3" placeholder="Phone">
+
+                </div>
+
+            </div><br><br>
+            <div class="t6">
+                <div>
+
+                    <input class="t3" placeholder="Message">
+
+                </div><br> <br>
+                <div>
+                    <a href="" class="s3">Request A Quote</a>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div class="main6">
+        <h1 class="l1" style="font-size: 45px;"> <b> Recent Blog</b></h1><br>
+        <p class="l1" style="font-size: 20px;">Separated they live in. A small river named Duden flows by their place and supplies it with the <br> necessary regelialia. It is a paradisematic country.
+        </p> <br><br>
+
+        <div class="tt">
+            <div class="p2">
+                <img src="https://st.depositphotos.com/1037778/1258/i/950/depositphotos_12588680-stock-photo-high-school-library-students-sitting.jpg" alt="" height="300px" width="350px">
+                <h4>Skills To Devlope Your CHild <br> Memory</h4>
+                <p>Far far away, behind the word <br> mountains, far from the countries <br> Vokalia and Consonantia, there live <br> the blind texts.
+
+
+                </p>
+                <a href="" class="s3">Read More &#10132;</a>
+
+            </div>
+            <div class="p2">
+                <img src="https://thoughtcatalog.com/wp-content/uploads/2014/06/shutterstock_138541277.jpg?resize=384" alt="" height="300px" width="350px">
+                <h4>Skills To Devlope Your CHild <br> Memory</h4>
+                <p>Far far away, behind the word <br> mountains, far from the countries <br> Vokalia and Consonantia, there live <br> the blind texts.
+
+
+                </p>
+                <a href="" class="s3">Read More &#10132;</a>
+
+            </div>
+            <div class="p2">
+                <img src="https://th.bing.com/th/id/R.8b8c50580d9d76d946a51d10c0b92594?rik=NVkiJ1i0ewkVXQ&riu=http%3a%2f%2fwww.newsvillage.us%2fwp-content%2fuploads%2f2019%2f09%2fGoing-To-College-Is-Easier-With-These-Great-Tips.jpg&ehk=kyGMOo85rxp8JHPoOjHdJ3QcR0uzaYY4%2bVvUk%2bg3AKQ%3d&risl=&pid=ImgRaw&r=0"
+                    alt="" height="300px" width="350px">
+                <h4>Skills To Devlope Your CHild <br> Memory</h4>
+                <p>Far far away, behind the word <br> mountains, far from the countries <br> Vokalia and Consonantia, there live <br> the blind texts.
+
+
+                </p>
+                <a href="" class="s3">Read More &#10132;</a>
+
+            </div>
+
+        </div>
+
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="p1">
+        <div>
+            <img src="https://thumbs.dreamstime.com/b/group-high-school-classmates-study-library-26338595.jpg" alt="" width="300px" height="340px">
+        </div>
+        <div>
+            <img src="https://www.haciendadelsol.com/resourcefiles/inner-section-one/intro-of-start-planning-meeting-at-hacienda-del-sol-guest-ranch-resort-tucson.jpg?version=8172021161239" alt="" width="305px" height="340px">
+        </div>
+        <div>
+            <img src="https://scx2.b-cdn.net/gfx/news/hires/2016/manycolleges.jpg" alt="" width="300px" height="340px">
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/736x/41/4a/60/414a60c2cbd8f6949eb8b71c1c3a7a9d.jpg" alt="" width="300px" height="340px">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="news py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-9 m-auto text-center">
+                    <h1>Subscribe Us.</h1>
+                    <input type="text" class="px-3" placeholder="Enter Your Email">
+                    <button class="btn2">Subscribe</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-18">
+                    <div class="row ">
+
+                        <div class="col-lg-3 py-3 ">
+                            <h5 class="pb-3 ">
+                                Connect with us
+                            </h5>
+                            <svg xmlns="http://www.w3.org/2000/svg " width="40 " height="40 " fill="currentColor " class="bi bi-facebook " viewBox="0 0 16 16 ">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303
+                            1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z "/>
+                              </svg> <br> <br>
+                            <svg xmlns="http://www.w3.org/2000/svg " width="40 " height="40 " fill="currentColor " class="bi bi-whatsapp " viewBox="0 0 16 16 ">
+                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994
+                            14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729
+                            0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z "/>
+                              </svg> <br><br>
+                            <svg xmlns="http://www.w3.org/2000/svg " width="40 " height="40 " fill="currentColor " class="bi bi-instagram " viewBox="0 0 16 16 ">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372
+                            1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99
+                            10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007
+                            3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478
+                            2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24
+                            1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z "/>
+                              </svg>
+                        </div>
+                        <div class="col-lg-3 py-3 ">
+                            <h4 class="pb-3 ">
+                                Have A Question?
+
+                            </h4>
+                            <svg xmlns="http://www.w3.org/2000/svg " width="25 " height="25 " fill="currentColor " class="bi bi-geo-alt " viewBox="0 0 16 16 ">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686
+                            6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z "/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z "/>
+                              </svg>
+                            <p> 203 Fake St. Mountain View, <br> San Francisco, California, USA</p>
+                            <svg xmlns="http://www.w3.org/2000/svg " width="25 " height="25 " fill="currentColor " class="bi bi-telephone " viewBox="0 0 16 16 ">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678
+                            0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678
+                            0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z "/>
+                              </svg>
+                            <p> +1230985764</p>
+                            <svg xmlns="http://www.w3.org/2000/svg " width="25 " height="25 " fill="currentColor " class="bi bi-envelope " viewBox="0 0 16 16 ">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64
+                            3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z "/>
+                              </svg>
+
+                            <p> altafake123@gmail.com</p>
+                        </div>
+                        <div class=" m1 col-lg-3 py-3 ps-5  ">
+                            <h5 class="pb-3 ">Links</h5>
+                            <span><a href="Home.html">&#10132; Home</a></span> <br>
+                            <span><a href="about.html">&#10132;About</a></span><br>
+                            <span><a href="Courses.html">&#10132;Courses</a></span> <br>
+                            <span><a href="blog.html">&#10132;Blog</a></span> <br>
+                            <span><a href="contact2.html">&#10132;Contacts</a></span>
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <hr>
+            <p class="text-center ">Copyright @2021 All rights reserved | This template is made with by ProWeb</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
